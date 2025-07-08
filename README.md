@@ -1,46 +1,51 @@
-# 📊 School Analysis – UCI Student Performance
+# 📊 Student Performance Analysis (StrataScratch)
 
-This project analyzes student performance data from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/), focusing on comparisons between Math and Portuguese classes. The analysis includes visualization of student metrics such as grades, age, study time, and absences.
+This project analyzes student performance data from the **StrataScratch Student Performance Analysis** dataset, comparing outcomes in **Mathematics** and **Portuguese language** classes. The analysis includes visual explorations and chi-square tests to identify significant factors impacting student achievement.
 
 ---
 
 ## 📝 Dataset
 
-The data used is based on:
-
-> **Student Performance Data Set** from UCI, which contains student achievement in secondary education of two Portuguese schools. It includes attributes like:
+Derived from the **StrataScratch Student Performance Analysis** project, the dataset originates from two Portuguese schools and includes features such as:
 - Student grades (G1, G2, G3)
-- Demographics
-- Study time
-- Absences
-- Family background
+- Demographics (age, gender, health, romantic status, etc.)
+- Study habits (study time, extra-curricular activities)
+- Family and school support
+- Internet access, absences, failures, parents' education, and more :contentReference[oaicite:1]{index=1}
 
 ---
 
-## 📌 Key Features of Analysis
+## 📌 Key Analysis Components
 
-- Comparison of overlapping student data between Math and Portuguese classes
-- Histogram visualizations of:
-  - Grades
-  - Study time
-  - Age distribution
-- Box plots to analyze outliers and distribution
-- Insights on how absences correlate with performance
+1. **Data Cleaning & Merging**  
+   - Load and combine datasets for Math and Portuguese classes.  
+   - Select relevant variables for analysis.
+
+2. **Exploratory Data Analysis (EDA)**  
+   - Plot histograms and boxplots for distributions of age, study time, failures, and grades for both subjects.
+
+3. **Chi-Square Tests**  
+   - **Mathematics:**  
+     - Examined associations between school support, family support, extra‑curricular activities, romantic relationships, health status, and final grades (G3).  
+   - **Portuguese:**  
+     - Tested relationships between gender, internet access, parents' education, and final grades. :contentReference[oaicite:2]{index=2}
+
+4. **Insights & Recommendations**  
+   - Based on statistical significance, highlight how factors like school support, romantic relationships (for Math), and parental education (for Portuguese) influence performance.  
+   - Discuss potential interventions: enhancing support programs, counseling services, parental engagement, etc.
 
 ---
 
-## 🧪 Technologies Used
+## 🧪 Tech Stack
 
-- Python
-- Pandas
-- Matplotlib / Seaborn
-- Jupyter Notebook
+- **Python** (pandas, matplotlib/seaborn, scipy.stats)  
+- **Jupyter Notebook**
 
 ---
 
 ## 🚀 How to Run
 
-1. Clone this repository:
+1. Clone the repo:
    ```bash
    git clone https://github.com/sabrinaprc/School-Analysis.git
    cd School-Analysis
